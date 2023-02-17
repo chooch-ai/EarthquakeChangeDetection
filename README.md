@@ -4,6 +4,9 @@ This repository aims to assess the damage caused by the devastating earthquakes 
 Here, we provide pre & post disaster satellite images acquired from [Planet](https://www.planet.com/), as well as damaged buildings 
 detected using Chooch AI Inference Engine (www.chooch.com). 
 
+Blue = undamaged or minimal damage
+Red = major damage or destroyed
+
 ### Directory Structure
 Pre & post disaster satellite images spatially matched are provided under `./data_matched/`  directory. 
 The `files_info.csv` contains useful information and paths to image pairs. 
@@ -33,6 +36,6 @@ where in this case `A` refers to pre-disaster and `B` refers to post-disaster bu
 
 ####  Comparison Image
 The images are shown side by side (or top/bottom, depending on aspect ratio) and the bounding boxes are drawn in two colors, such that:    
-- <span style="color:cyan">blue</span> for common (non-damaged) buildings 
+- <span style="color:cyan">blue</span> for common (undamaged or minor damage) buildings 
 - <span style="color:red">red</span> for objects that are present only in pre disaster image, therefore destroyed buildings.
 
