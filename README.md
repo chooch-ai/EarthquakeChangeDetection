@@ -8,7 +8,7 @@ detected using Chooch AI Inference Engine (www.chooch.com).
 Pre & post disaster satellite images spatially matched are provided under `./data_matched/`  directory. 
 The `files_info.csv` contains useful information and paths to image pairs. 
 
-The image pairs are grouped by city and dictrict such that each pair can be accessed as:  
+The image pairs are grouped by city and district such that each pair can be accessed as:  
 ```bash
 {city}/{district}_{id}/
 -- {...}_pre.jpg
