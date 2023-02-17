@@ -1,11 +1,11 @@
 # EarthquakeChangeDetection
 
-This repository aims to assess the damage caused by the devastating earthquake that shaked Turkey and Syria in Feb 6, 2023. 
-Here, we provide pre & post disaster satellite images acquired from [Planet](https://www.planet.com/), as well as the buildings 
-that are detected using Chooch AI Inference Engine. 
+This repository aims to assess the damage caused by the devastating earthquakes that hit Turkey and Syria on Feb 6, 2023. 
+Here, we provide pre & post disaster satellite images acquired from [Planet](https://www.planet.com/), as well as damaged buildings 
+detected using Chooch AI Inference Engine (www.chooch.com). 
 
 ### Directory Structure
-Pre & post disaster satellite images that are spatiallyt matched are provided under `./data_matched/`  directory. 
+Pre & post disaster satellite images spatially matched are provided under `./data_matched/`  directory. 
 The `files_info.csv` contains useful information and paths to image pairs. 
 
 The image pairs are grouped by city and dictrict such that each pair can be accessed as:  
@@ -29,7 +29,7 @@ Each json has two components, `raw_results` and `changes`, where
 - `raw_results` contain the original predictions for `'A'` & `'B'` images and 
 - `changes` contain the predictions grouped by class name and belonging to `'only_A','only_B','common_A','common_B'`  
 
-where in our case `A` refers to pre-disaster and `B` refers to post-disaster buildings. The objects listed under `'only_A'` are supposed to be the destroyed buildings.
+where in this case `A` refers to pre-disaster and `B` refers to post-disaster buildings. The objects listed under `'only_A'` are destroyed buildings.
 
 ####  Comparison Image
 The images are shown side by side (or top/bottom, depending on aspect ratio) and the bounding boxes are drawn in two colors, such that:    
